@@ -135,7 +135,7 @@ GameObject:
   - component: {fileID: 379757856}
   - component: {fileID: 379757855}
   m_Layer: 0
-  m_Name: Static Sprite (3)
+  m_Name: Agent3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -274,11 +274,11 @@ Transform:
   m_GameObject: {fileID: 379757854}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: 0.070081264, w: 0.9975413}
-  m_LocalPosition: {x: 7.31, y: -2.71, z: 0}
-  m_LocalScale: {x: 8.2802, y: 1, z: 1}
+  m_LocalPosition: {x: 7.72, y: 0.53, z: 0}
+  m_LocalScale: {x: 8.280199, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1531221196}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 8.037}
 --- !u!1 &481076358
 GameObject:
@@ -293,7 +293,7 @@ GameObject:
   - component: {fileID: 481076360}
   - component: {fileID: 481076359}
   m_Layer: 0
-  m_Name: Static Sprite (2)
+  m_Name: Agent2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -432,11 +432,11 @@ Transform:
   m_GameObject: {fileID: 481076358}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: 0.077773646, w: -0.9969711}
-  m_LocalPosition: {x: -8.2, y: -2.53, z: 0}
-  m_LocalScale: {x: 8.2802, y: 1, z: 1}
+  m_LocalPosition: {x: -7.790001, y: 0.71000004, z: 0}
+  m_LocalScale: {x: 8.280199, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1531221196}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -8.921}
 --- !u!1 &659267160
 GameObject:
@@ -652,6 +652,40 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1531221195
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1531221196}
+  m_Layer: 0
+  m_Name: AGENTS
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1531221196
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1531221195}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.41, y: -3.24, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1795328659}
+  - {fileID: 481076362}
+  - {fileID: 379757858}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1795328655
 GameObject:
   m_ObjectHideFlags: 0
@@ -665,7 +699,7 @@ GameObject:
   - component: {fileID: 1795328657}
   - component: {fileID: 1795328656}
   m_Layer: 0
-  m_Name: Static Sprite (1)
+  m_Name: Agent1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -803,12 +837,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1795328655}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.41, y: -3.24, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 6.7674146, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1531221196}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1817874815
 GameObject:
@@ -953,7 +987,5 @@ SceneRoots:
   m_Roots:
   - {fileID: 1817874819}
   - {fileID: 659267162}
-  - {fileID: 1795328659}
-  - {fileID: 481076362}
-  - {fileID: 379757858}
+  - {fileID: 1531221196}
   - {fileID: 802488670}
