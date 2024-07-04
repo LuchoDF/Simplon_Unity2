@@ -13,14 +13,14 @@ public class TouchInput : MonoBehaviour{
     void Update() {
 
         if (!Touchscreen.current.primaryTouch.press.IsPressed()) {
-            return.
+            return;
         }
 
         Vector2 touchPosition = Touchscreen.current.primaryTouch.position.ReadValue();
         Vector3 worldPosition = mainCamera.ScreenToWorldPoint(touchPosition);
 
         Debug.Log("TOUCH POSITION: " + touchPosition);
-        Debug.Log("WORLD POSITION: " + worldPositionPosition);
+        Debug.Log("WORLD POSITION: " + worldPosition);
 
 
     }

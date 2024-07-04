@@ -292,7 +292,6 @@ GameObject:
   - component: {fileID: 481076361}
   - component: {fileID: 481076360}
   - component: {fileID: 481076359}
-  - component: {fileID: 481076363}
   m_Layer: 0
   m_Name: agent2
   m_TagString: Untagged
@@ -439,25 +438,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1531221196}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 1446.887}
---- !u!114 &481076363
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 481076358}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3b5f340a45aefdf4b89471bf11d46c2c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  agent1: {fileID: 481076358}
-  agent2: {fileID: 1795328655}
-  agent3: {fileID: 379757854}
-  changeSpeed: 10
-  minScale: 0.5
-  maxScale: 2
-  scaleSpeed: 2
 --- !u!1 &659267160
 GameObject:
   m_ObjectHideFlags: 0
@@ -467,7 +447,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 659267162}
-  - component: {fileID: 659267161}
   m_Layer: 0
   m_Name: agentasd
   m_TagString: Untagged
@@ -475,25 +454,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &659267161
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 659267160}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3b5f340a45aefdf4b89471bf11d46c2c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  agent1: {fileID: 0}
-  agent2: {fileID: 0}
-  agent3: {fileID: 0}
-  changeSpeed: 10
-  minScale: 0.5
-  maxScale: 2
-  scaleSpeed: 2
 --- !u!4 &659267162
 Transform:
   m_ObjectHideFlags: 0
@@ -522,6 +482,7 @@ GameObject:
   - component: {fileID: 802488668}
   - component: {fileID: 802488667}
   - component: {fileID: 802488666}
+  - component: {fileID: 802488671}
   m_Layer: 0
   m_Name: balle2
   m_TagString: Untagged
@@ -679,6 +640,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &802488671
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 802488665}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d302db435521a6449b840d9aa1f8b349, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1082936862
 GameObject:
   m_ObjectHideFlags: 0
