@@ -11,6 +11,10 @@ public class AgentManager : MonoBehaviour
 
     public float changeSpeed = 10;
     private static float timer = 0.0f;
+    // Variables para controlar el tamaño mínimo y máximo
+    public float minScale = 0.5f;
+    public float maxScale = 2.0f;
+    public float scaleSpeed = 2.0f;
 
     // Start is called before the first frame update
     void Start()
@@ -21,7 +25,33 @@ public class AgentManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Rotate(agent1, changeSpeed = 5);
+        Rotate(agent1, changeSpeed*5);
+        agent2.GetComponent<SpriteRenderer>().material.color = GetSinCosColor(changeSpeed/2);
+        PushUp(agent3.GetComponent<Rigidbody2D>(), 1);
+        ChangeSize(agent1, minScale, maxScale, scaleSpeed);
+    }
 
+    void Rotate(GameObject go, float speed) {
+        go.transform.localRotation = Quaternion.Euler(0, 0, agent1.transform.localEulerAngles.z + speed * Time.deltaTime);
+    }
+
+    Color GetSinCosColor(float speed) {
+        timer += (speed) * Time.deltaTime;
+        return new Color(Mathf.Sin(timer), Mathf.Cos(timer), 1, 1);
+    }
+
+    void PushUp(Rigidbody2D rb, float force) {
+        if(rb != null){
+            rb.AddForce(new Vector2(0, force));
+        }
+        else {
+            throw new Exception("No RigidBody detected");
+        }
+    }
+
+    void ChangeSize(GameObject go, float min, float max, float speed)
+    {
+        float scale = Mathf.PingPong(Time.time * speed, max - min) + min;
+        go.transform.localScale = new Vector3(scale, scale, scale);
     }
 }
